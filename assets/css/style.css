@@ -1,0 +1,139 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* Theme */
+:root {
+    --font-family: 'Open Sans', sans-serif;
+    --primary: #8e44ad;
+    --dark: #2c3e50;
+    --background-light: #ecf0f1;
+    --text-color: #444;
+    --text-color-light: #fff;
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    --border: 1px solid #eee;
+    --danger: #e74c3c;
+}
+
+html, body{
+    font-family: var(--font-family);
+    background-color: var(--background-light);
+    font-size: 1rem;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+/* General classes */
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+.flex-row{
+    flex-direction: row;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.btn{
+    background-color: white;
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 1rem;
+    border:0;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--text-color-light);
+    box-shadow: var(--box-shadow);
+}
+.btn-danger{
+    background-color: var(--danger);
+    color: var(--text-color-light);
+}
+.btn-small{
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+.text-danger{
+    color: var(--danger);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.line {
+    text-decoration: line-through;
+}
+/* Header */
+header{
+    background-color: var(--primary);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+.logo{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+/* Main */
+main{
+    flex:1;
+}
+h1{
+    margin-bottom: 1rem;
+}
+.todo-container{
+    padding: 1rem;
+    background-color: white;
+    border: var(--border);
+    border-radius: 3px;
+    min-width: 30rem;
+    min-height: 20rem;
+    box-shadow: var(--box-shadow);
+}
+.todo-form input{
+    width: 100%;
+    margin-right: 0.5rem;
+    border: var(--border);
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+.todo-name{
+    flex:1;
+    margin-right: 5px;
+}
+.todo-item{
+    margin-bottom: 0.5rem;
+    padding: 0.1rem 1rem;
+}
+.todo-item:nth-child(even){
+    background-color: var(--background-light);
+    
+}
+.todo-list{
+    padding: 1rem 0rem;
+}
+/* Footer */
+footer{
+    background-color: var(--dark);
+    color: var(--text-color-light);
+    flex-direction: row-reverse;
+    padding: 1rem;
+}
